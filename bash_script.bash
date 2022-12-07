@@ -1,8 +1,7 @@
 #!/bin/bash
-mkdir Desktop Documents Downloads Pictures Videos done
-
-for i in 1 2 3 4 5
+mkdir Desktop Documents Downloads Pictures Videos
+for idk in 1 2 3 4 5
 do
-mkdir folder$i
+mkdir folder$idk
 done
 
