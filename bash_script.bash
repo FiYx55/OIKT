@@ -2,5 +2,6 @@
 mkdir Desktop Documents Downloads Pictures Videos Music
 
 for i in 1 2 3 4 5
-do mkdir folder$i
+do 
+mkdir folder$i
 done
