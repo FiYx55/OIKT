@@ -6,8 +6,8 @@ do
 mkdir folder$st
 done
 
-sudo apt update
-sudo apt upgrade
+sudo apt update -y
+sudo apt upgrade -y
 
 sudo apt install -y ufw
 sudo apt install -y git
