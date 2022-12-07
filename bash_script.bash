@@ -14,6 +14,14 @@ sudo apt install -y git
 sudo apt install -y nginx
 sudo apt install -y net-tools
 
+wget https://raw.githubusercontent.com/FiYx55/OIKT/main/users.txt
+while read user; do
+echo $user
+sudo useradd $user
+sudo mkdir /home/$user
+sudo  usermod -aG sudo $user
+done < users.txt 
+
 sudo apt-get update
 sudo apt-get install \
     ca-certificates \
@@ -28,3 +36,7 @@ echo \
   sudo apt-get update
   sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
   sudo docker run hello-world
+  
+
+
+
